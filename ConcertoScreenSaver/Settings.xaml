@@ -1,0 +1,21 @@
+﻿<Window x:Class="ConcertoScreenSaver.Settings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:ConcertoScreenSaver.Properties"
+    Title="Settings" Height="436" Width="300" WindowStartupLocation="CenterScreen"  Icon="/Concerto;component/concerto_48x48.ico">
+    <Window.Resources>
+        <local:Settings x:Key="settings" />
+    </Window.Resources>
+    <Grid>
+        <Grid Margin="0,0,0,0" Name="gridsettings" DataContext="{StaticResource settings}">
+            <TextBox Margin="20,37,20,0" Name="ConcertoRoot" Height="24" VerticalAlignment="Top" Text="{Binding Path=Default.ConcertoRoot}" />
+            <Label Height="28" Margin="20,9,20,0" Name="lblInstallation" VerticalAlignment="Top">Concerto Installation:</Label>
+            <Button Height="30" Margin="40,73,40,0" Name="btnLoad" VerticalAlignment="Top" Click="btnLoad_Click">Load</Button>
+            <ListBox Margin="20,150,20,50" Name="FeedBox" SelectionMode="Multiple" />
+            <Button Margin="100,0,100,15" Name="btnSave" Height="22" VerticalAlignment="Bottom" Click="btnSave_Click">Save</Button>
+            <Label Height="24" HorizontalAlignment="Right" Margin="0" Name="lblVersion" VerticalAlignment="Bottom" Width="102" FontSize="10" HorizontalContentAlignment="Right">Version X.X.X.XXXXX</Label>
+            <TextBox Height="24" Margin="0,110,20,0" Name="textBox1" Text="{Binding Path=Default.SlideTime}" VerticalAlignment="Top" HorizontalAlignment="Right" Width="60" />
+            <Label Height="28" Margin="0,108,83,0" Name="lblSlideTime" VerticalAlignment="Top" HorizontalAlignment="Right" Width="107">Seconds per slide:</Label>
+        </Grid>
+    </Grid>
+</Window>

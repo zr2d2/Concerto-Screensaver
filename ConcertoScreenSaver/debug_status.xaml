@@ -1,0 +1,23 @@
+﻿<Window x:Class="ConcertoScreenSaver.debug_status"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Application Information" Height="402" Width="391" Loaded="Window_Loaded" Topmost="True" WindowStartupLocation="CenterScreen" WindowState="Normal" ResizeMode="CanResize">
+    <Grid>
+        <Label Height="28" Margin="23,25,0,0" Name="label1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="115">Version:</Label>
+        <Label Height="28" Margin="23,50,0,0" Name="label2" VerticalAlignment="Top" HorizontalAlignment="Left" Width="115">Remote Server:</Label>
+        <Label Height="28" Margin="23,75,0,0" Name="label3" VerticalAlignment="Top" HorizontalAlignment="Left" Width="115">Feed Path:</Label>
+        <Label Height="28" Margin="149,25,25,0" Name="lblVersion" VerticalAlignment="Top" HorizontalContentAlignment="Right"></Label>
+        <Label Height="28" Margin="149,50,25,0" Name="lblRemoteServer" VerticalAlignment="Top" HorizontalContentAlignment="Right"></Label>
+        <Label Margin="149,75,25,0" Name="lblFeedPath" HorizontalContentAlignment="Right" Height="28" VerticalAlignment="Top"></Label>
+        <Label Height="28" HorizontalAlignment="Left" Margin="23,100,0,0" Name="label4" VerticalAlignment="Top" Width="115">Sysinfo Path:</Label>
+        <Label Height="28" HorizontalContentAlignment="Right" Margin="149,100,25,0" Name="lblSysinfoPath" VerticalAlignment="Top" />
+        <Label Height="28" HorizontalAlignment="Left" Margin="23,125,0,0" Name="label5" VerticalAlignment="Top" Width="115">DNS Lookup:</Label>
+        <Label Height="28" HorizontalContentAlignment="Right" Margin="149,125,25,0" Name="lblDNSLookup" VerticalAlignment="Top" />
+        <Label Height="28" HorizontalAlignment="Left" Margin="23,150,0,0" Name="label6" VerticalAlignment="Top" Width="115">Ping Status:</Label>
+        <Label Height="28" HorizontalContentAlignment="Right" Margin="149,150,25,0" Name="lblPingStats" VerticalAlignment="Top" />
+        <Label Height="28" HorizontalAlignment="Left" Margin="23,175,0,0" Name="label7" VerticalAlignment="Top" Width="115">Cache Location:</Label>
+        <Label Height="28" HorizontalContentAlignment="Right" Margin="149,175,25,0" Name="lblCacheLocation"  VerticalAlignment="Top" />
+        <Label Height="28" HorizontalAlignment="Left" Margin="23,200,0,0" Name="label8" VerticalAlignment="Top" Width="115">Current User:</Label>
+        <Label Height="28" HorizontalContentAlignment="Right" Margin="149,200,25,0" Name="lblCurUser"  VerticalAlignment="Top" />
+    </Grid>
+</Window>

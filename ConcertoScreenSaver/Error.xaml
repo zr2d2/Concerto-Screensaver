@@ -1,0 +1,12 @@
+﻿<Window x:Class="ConcertoScreenSaver.Error"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Error" Height="300" Width="500"
+        Unloaded="Window_Unloaded" Icon="/Concerto;component/concerto_48x48.ico">
+    <Grid>
+        <TextBox Margin="25,32,25,48" Name="txtError" TextWrapping="WrapWithOverflow" VerticalScrollBarVisibility="Auto" FontSize="10"></TextBox>
+        <Label Height="28" HorizontalAlignment="Left" Margin="10,8,0,0" Name="lblEM" VerticalAlignment="Top" Width="120">Error Info:</Label>
+        <TextBox Height="27" Margin="10,0,199,9" Name="txtContact" VerticalAlignment="Bottom" Background="Transparent" BorderThickness="0" IsTabStop="False" IsReadOnly="True">
+            Email the error info to concerto@union.rpi.edu</TextBox>
+    </Grid>
+</Window>
